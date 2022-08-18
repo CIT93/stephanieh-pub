@@ -28,16 +28,14 @@ showOnPage('Should I cook or order take out?')
     showOnPage('Cook a meal') 
  } 
  // Decideing what everyone wants for dinner 
- showOnPage('What should we get for dinner?')
- let guestsWant = false // true wants Chinese food, false wants Mexican food
- let iWant = false 
- if (guestsWant && iWant) {
-    showOnPage('Get Chinese for dinner')
- }else if (guestsWant || iWant) {
-    showOnPage('Flip a Coin')
- }else {
-    showOnPage('Mexican Food')
- }
+ showOnPage('Do we agree on whats for dinner?')
+let guestWants = false
+let iWant = true
+if (guestWants && iWant) {
+    showOnPage('Get that for dinner')
+} else {
+    showOnPage('Flip a coin!')
+}
 // now i am going to decide how many people i am cooking for 
 showOnPage('How Many people am I providing dinner for?')
 let dinnerGuests = '3' // how many people are eating dinner with me 
