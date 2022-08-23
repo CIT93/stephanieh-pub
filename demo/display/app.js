@@ -1,6 +1,2 @@
-const showOnPage = function (text) {
-    let newParagraph = document.createElement("p")
-    newParagraph.innerHTML = text
-    let outputDiv = document.getElementById("output")
-    outputDiv.append(newParagraph)
-}
+<div id="output"></div>
+<script src="app.js"></script>
